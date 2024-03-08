@@ -1,3 +1,4 @@
+--ejecutar en e maestro
 --create database link esclavo 1
 CREATE DATABASE LINK PROYECTO1
 CONNECT TO replica1 IDENTIFIED BY replica1
@@ -24,3 +25,5 @@ USING '
     )
   )
 ';
+--pruebas
+select * from role@PROYECTO1;
